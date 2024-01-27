@@ -7,11 +7,6 @@ class SimpleThread extends Thread {
     }
 
     public synchronized void run() {
-//        try {
-//            sleep((long)(Math.random() * 1000));
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
         for (int count = 1; count < 11; count++) {
             try {
                 sleep((long)(Math.random() * 1000));
