@@ -20,6 +20,7 @@ public class Woolie extends Thread {
                 System.out.println(name + " is starting to cross.");
             }
             else if (count == speed) {
+                System.out.println("\t" + name + " " + count + " seconds.");
                 System.out.println(name + " leaves at " + destination);
                 break;
             }
