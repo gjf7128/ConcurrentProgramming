@@ -7,13 +7,22 @@ public class Woolie extends Thread {
 
     String destination;
 
-    public Woolie(String name, int speed, String destination) {
+    /**Also known as the troll */
+    Bridge bridge;
+
+    public Woolie(String name, int speed, String destination, Bridge bridge) {
         this.name = name;
         this.speed = speed;
         this.destination = destination;
+        this.bridge = bridge;
     }
 
     public synchronized void run() {
+        try {
+            bridge.enterBridge();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         for (int count = 0; count <= speed; count++) {
             if (count == 0) {
                 System.out.println(name + " has arrived at the bridge.");
@@ -33,5 +42,7 @@ public class Woolie extends Thread {
                 System.out.println("Thread interrupted.");
             }
         }
+        bridge.leaveBridge();
+        notifyAll();
     }
 }
