@@ -1,0 +1,567 @@
+Run 1 with args:
+[-l] [np] [nt] [tm] [em]
+0 2 0 0 0
+
+Philospher 0 thinks for 0 milliseconds
+Philospher 1 thinks for 0 milliseconds
+Philosopher 0 goes for right fork
+Philosopher 1 goes for right fork
+Philosopher 1 has right fork
+Philosopher 0 has right fork
+Philosopher 0 goes for left fork
+Philosopher 1 goes for left fork
+
+Notes: Definitely got some deadlock here as my program never finishes.
+
+
+Run 2 with args:
+[-l] [np] [nt] [tm] [em]
+0 6 4 4 2
+
+Philospher 4 thinks for 2 milliseconds
+Philospher 0 thinks for 1 milliseconds
+Philospher 3 thinks for 3 milliseconds
+Philospher 2 thinks for 3 milliseconds
+Philospher 1 thinks for 2 milliseconds
+Philospher 5 thinks for 0 milliseconds
+Philosopher 3 goes for right fork
+Philosopher 3 has right fork
+Philosopher 1 goes for right fork
+Philosopher 1 has right fork
+Philosopher 5 goes for right fork
+Philosopher 5 has right fork
+Philosopher 3 goes for left fork
+Philosopher 2 goes for right fork
+Philosopher 0 goes for right fork
+Philosopher 0 has right fork
+Philosopher 4 goes for right fork
+Philosopher 4 has right fork
+Philosopher 3 has left fork
+Philosopher 1 goes for left fork
+Philosopher 5 goes for left fork
+Philosopher 0 goes for left fork
+Philosopher 4 goes for left fork
+Philosopher 3 eats for 1 milliseconds
+Philosopher 4 has left fork
+Philosopher 4 eats for 1 milliseconds
+Philosopher 3 releases right fork
+Philosopher 2 has right fork
+Philosopher 3 releases left fork
+Philosopher 2 goes for left fork
+Philospher 3 thinks for 3 milliseconds
+Philosopher 4 releases right fork
+Philosopher 5 has left fork
+Philosopher 4 releases left fork
+Philospher 4 thinks for 1 milliseconds
+Philosopher 5 eats for 1 milliseconds
+Philosopher 0 has left fork
+Philosopher 4 goes for right fork
+Philosopher 0 eats for 1 milliseconds
+Philosopher 5 releases right fork
+Philosopher 5 releases left fork
+Philosopher 4 has right fork
+Philospher 5 thinks for 3 milliseconds
+Philosopher 4 goes for left fork
+Philosopher 4 has left fork
+Philosopher 4 eats for 0 milliseconds
+Philosopher 4 releases right fork
+Philosopher 4 releases left fork
+Philospher 4 thinks for 3 milliseconds
+Philosopher 3 goes for right fork
+Philosopher 3 has right fork
+Philosopher 3 goes for left fork
+Philosopher 0 releases right fork
+Philosopher 0 releases left fork
+Philosopher 1 has left fork
+Philospher 0 thinks for 3 milliseconds
+Philosopher 1 eats for 0 milliseconds
+Philosopher 1 releases right fork
+Philosopher 2 has left fork
+Philosopher 1 releases left fork
+Philosopher 2 eats for 0 milliseconds
+Philospher 1 thinks for 1 milliseconds
+Philosopher 2 releases right fork
+Philosopher 3 has left fork
+Philosopher 2 releases left fork
+Philospher 2 thinks for 3 milliseconds
+Philosopher 3 eats for 1 milliseconds
+Philosopher 5 goes for right fork
+Philosopher 5 has right fork
+Philosopher 5 goes for left fork
+Philosopher 5 has left fork
+Philosopher 5 eats for 1 milliseconds
+Philosopher 1 goes for right fork
+Philosopher 4 goes for right fork
+Philosopher 3 releases right fork
+Philosopher 1 has right fork
+Philosopher 3 releases left fork
+Philospher 3 thinks for 0 milliseconds
+Philosopher 1 goes for left fork
+Philosopher 1 has left fork
+Philosopher 3 goes for right fork
+Philosopher 3 has right fork
+Philosopher 1 eats for 1 milliseconds
+Philosopher 3 goes for left fork
+Philosopher 3 has left fork
+Philosopher 3 eats for 0 milliseconds
+Philosopher 5 releases right fork
+Philosopher 5 releases left fork
+Philospher 5 thinks for 1 milliseconds
+Philosopher 2 goes for right fork
+Philosopher 0 goes for right fork
+Philosopher 4 has right fork
+Philosopher 4 goes for left fork
+Philosopher 4 has left fork
+Philosopher 3 releases right fork
+Philosopher 4 eats for 0 milliseconds
+Philosopher 2 has right fork
+Philosopher 3 releases left fork
+Philospher 3 thinks for 0 milliseconds
+Philosopher 4 releases right fork
+Philosopher 4 releases left fork
+Philospher 4 thinks for 1 milliseconds
+Philosopher 2 goes for left fork
+Philosopher 1 releases right fork
+Philosopher 1 releases left fork
+Philospher 1 thinks for 1 milliseconds
+Philosopher 3 goes for right fork
+Philosopher 3 has right fork
+Philosopher 0 has right fork
+Philosopher 5 goes for right fork
+Philosopher 5 has right fork
+Philosopher 2 has left fork
+Philosopher 0 goes for left fork
+Philosopher 3 goes for left fork
+Philosopher 1 goes for right fork
+Philosopher 5 goes for left fork
+Philosopher 5 has left fork
+Philosopher 4 goes for right fork
+Philosopher 2 eats for 1 milliseconds
+Philosopher 5 eats for 0 milliseconds
+Philosopher 5 releases right fork
+Philosopher 0 has left fork
+Philosopher 4 has right fork
+Philosopher 5 releases left fork
+Philospher 5 thinks for 3 milliseconds
+Philosopher 0 eats for 0 milliseconds
+Philosopher 4 goes for left fork
+Philosopher 3 has left fork
+Philosopher 2 releases right fork
+Philosopher 2 releases left fork
+Philospher 2 thinks for 1 milliseconds
+Philosopher 1 has right fork
+Philosopher 2 goes for right fork
+Philosopher 0 releases right fork
+Philosopher 0 releases left fork
+Philosopher 1 goes for left fork
+Philosopher 1 has left fork
+Philosopher 3 eats for 0 milliseconds
+Philospher 0 thinks for 0 milliseconds
+Philosopher 5 goes for right fork
+Philosopher 1 eats for 0 milliseconds
+Philosopher 5 has right fork
+Philosopher 4 has left fork
+Philosopher 3 releases right fork
+Philosopher 2 has right fork
+Philosopher 3 releases left fork
+Philosopher 0 goes for right fork
+Philosopher 1 releases right fork
+Philosopher 4 eats for 0 milliseconds
+Philosopher 5 goes for left fork
+Philosopher 1 releases left fork
+Philosopher 0 has right fork
+Philospher 1 thinks for 3 milliseconds
+Philosopher 2 goes for left fork
+Philosopher 2 has left fork
+Philosopher 4 releases right fork
+Philosopher 5 has left fork
+Philosopher 4 releases left fork
+Philosopher 0 goes for left fork
+Philosopher 2 eats for 0 milliseconds
+Philosopher 5 eats for 0 milliseconds
+Philosopher 2 releases right fork
+Philosopher 2 releases left fork
+Philospher 2 thinks for 0 milliseconds
+Philosopher 0 has left fork
+Philosopher 5 releases right fork
+Philosopher 5 releases left fork
+Philosopher 2 goes for right fork
+Philosopher 2 has right fork
+Philosopher 0 eats for 0 milliseconds
+Philosopher 2 goes for left fork
+Philosopher 2 has left fork
+Philosopher 0 releases right fork
+Philosopher 0 releases left fork
+Philosopher 1 goes for right fork
+Philospher 0 thinks for 1 milliseconds
+Philosopher 2 eats for 0 milliseconds
+Philosopher 2 releases right fork
+Philosopher 1 has right fork
+Philosopher 2 releases left fork
+Philosopher 1 goes for left fork
+Philosopher 1 has left fork
+Philosopher 1 eats for 0 milliseconds
+Philosopher 1 releases right fork
+Philosopher 1 releases left fork
+Philosopher 0 goes for right fork
+Philosopher 0 has right fork
+Philosopher 0 goes for left fork
+Philosopher 0 has left fork
+Philosopher 0 eats for 1 milliseconds
+Philosopher 0 releases right fork
+Philosopher 0 releases left fork
+
+notes: This run went on quite long but it did conclude!  Also noticed
+ that I have a typo in one of my print statements.
+
+
+Run 3 with args:
+[-l] [np] [nt] [tm] [em]
+0 4 4 6 8
+
+Philosopher 1 thinks for 4 milliseconds
+Philosopher 0 thinks for 1 milliseconds
+Philosopher 3 thinks for 2 milliseconds
+Philosopher 2 thinks for 5 milliseconds
+Philosopher 3 goes for right fork
+Philosopher 1 goes for right fork
+Philosopher 2 goes for right fork
+Philosopher 2 has right fork
+Philosopher 0 goes for right fork
+Philosopher 1 has right fork
+Philosopher 3 has right fork
+Philosopher 0 has right fork
+Philosopher 2 goes for left fork
+Philosopher 3 goes for left fork
+Philosopher 0 goes for left fork
+Philosopher 1 goes for left fork
+
+notes: got some deadlock here.  Program never finished.
+
+Run 4 without providing args which ran with their default values:
+[-l] [np] [nt] [tm] [em]
+false 4 10 0 0  (these are the default values)
+
+Philosopher 3 thinks for 0 milliseconds
+Philosopher 0 thinks for 0 milliseconds
+Philosopher 1 thinks for 0 milliseconds
+Philosopher 2 thinks for 0 milliseconds
+Philosopher 3 goes for left fork
+Philosopher 2 goes for right fork
+Philosopher 0 goes for right fork
+Philosopher 3 has left fork
+Philosopher 0 has right fork
+Philosopher 1 goes for left fork
+Philosopher 3 goes for right fork
+Philosopher 3 has right fork
+Philosopher 3 eats for 0 milliseconds
+Philosopher 0 goes for left fork
+Philosopher 0 has left fork
+Philosopher 0 eats for 0 milliseconds
+Philosopher 3 releases right fork
+Philosopher 2 has right fork
+Philosopher 1 has left fork
+Philosopher 0 releases right fork
+Philosopher 0 releases left fork
+Philosopher 0 thinks for 0 milliseconds
+Philosopher 3 releases left fork
+Philosopher 2 goes for left fork
+Philosopher 3 thinks for 0 milliseconds
+Philosopher 2 has left fork
+Philosopher 1 goes for right fork
+Philosopher 0 goes for right fork
+Philosopher 3 goes for left fork
+Philosopher 2 eats for 0 milliseconds
+Philosopher 3 has left fork
+Philosopher 2 releases right fork
+Philosopher 1 has right fork
+Philosopher 1 eats for 0 milliseconds
+Philosopher 2 releases left fork
+Philosopher 2 thinks for 0 milliseconds
+Philosopher 3 goes for right fork
+Philosopher 3 has right fork
+Philosopher 3 eats for 0 milliseconds
+Philosopher 1 releases right fork
+Philosopher 0 has right fork
+Philosopher 1 releases left fork
+Philosopher 1 thinks for 0 milliseconds
+Philosopher 2 goes for right fork
+Philosopher 3 releases right fork
+Philosopher 2 has right fork
+Philosopher 3 releases left fork
+Philosopher 3 thinks for 0 milliseconds
+Philosopher 0 goes for left fork
+Philosopher 0 has left fork
+Philosopher 1 goes for left fork
+Philosopher 2 goes for left fork
+Philosopher 2 has left fork
+Philosopher 3 goes for left fork
+Philosopher 0 eats for 0 milliseconds
+Philosopher 2 eats for 0 milliseconds
+Philosopher 1 has left fork
+Philosopher 0 releases right fork
+Philosopher 0 releases left fork
+Philosopher 0 thinks for 0 milliseconds
+Philosopher 3 has left fork
+Philosopher 2 releases right fork
+Philosopher 2 releases left fork
+Philosopher 2 thinks for 0 milliseconds
+Philosopher 0 goes for right fork
+Philosopher 1 goes for right fork
+Philosopher 1 has right fork
+Philosopher 3 goes for right fork
+Philosopher 1 eats for 0 milliseconds
+Philosopher 3 has right fork
+Philosopher 3 eats for 0 milliseconds
+Philosopher 2 goes for right fork
+Philosopher 1 releases right fork
+Philosopher 0 has right fork
+Philosopher 1 releases left fork
+Philosopher 3 releases right fork
+Philosopher 1 thinks for 0 milliseconds
+Philosopher 2 has right fork
+Philosopher 3 releases left fork
+Philosopher 3 thinks for 0 milliseconds
+Philosopher 0 goes for left fork
+Philosopher 0 has left fork
+Philosopher 1 goes for left fork
+Philosopher 2 goes for left fork
+Philosopher 2 has left fork
+Philosopher 3 goes for left fork
+Philosopher 0 eats for 0 milliseconds
+Philosopher 2 eats for 0 milliseconds
+Philosopher 1 has left fork
+Philosopher 0 releases right fork
+Philosopher 0 releases left fork
+Philosopher 0 thinks for 0 milliseconds
+Philosopher 2 releases right fork
+Philosopher 3 has left fork
+Philosopher 2 releases left fork
+Philosopher 2 thinks for 0 milliseconds
+Philosopher 1 goes for right fork
+Philosopher 1 has right fork
+Philosopher 1 eats for 0 milliseconds
+Philosopher 0 goes for right fork
+Philosopher 3 goes for right fork
+Philosopher 3 has right fork
+Philosopher 3 eats for 0 milliseconds
+Philosopher 2 goes for right fork
+Philosopher 1 releases right fork
+Philosopher 0 has right fork
+Philosopher 1 releases left fork
+Philosopher 1 thinks for 0 milliseconds
+Philosopher 3 releases right fork
+Philosopher 1 goes for left fork
+Philosopher 3 releases left fork
+Philosopher 0 goes for left fork
+Philosopher 2 has right fork
+Philosopher 0 has left fork
+Philosopher 3 thinks for 0 milliseconds
+Philosopher 2 goes for left fork
+Philosopher 2 has left fork
+Philosopher 0 eats for 0 milliseconds
+Philosopher 3 goes for left fork
+Philosopher 2 eats for 0 milliseconds
+Philosopher 1 has left fork
+Philosopher 0 releases right fork
+Philosopher 0 releases left fork
+Philosopher 0 thinks for 0 milliseconds
+Philosopher 3 has left fork
+Philosopher 2 releases right fork
+Philosopher 2 releases left fork
+Philosopher 2 thinks for 0 milliseconds
+Philosopher 1 goes for right fork
+Philosopher 1 has right fork
+Philosopher 1 eats for 0 milliseconds
+Philosopher 0 goes for right fork
+Philosopher 3 goes for right fork
+Philosopher 3 has right fork
+Philosopher 3 eats for 0 milliseconds
+Philosopher 2 goes for right fork
+Philosopher 1 releases right fork
+Philosopher 1 releases left fork
+Philosopher 0 has right fork
+Philosopher 1 thinks for 0 milliseconds
+Philosopher 3 releases right fork
+Philosopher 3 releases left fork
+Philosopher 3 thinks for 0 milliseconds
+Philosopher 2 has right fork
+Philosopher 0 goes for left fork
+Philosopher 0 has left fork
+Philosopher 1 goes for left fork
+Philosopher 3 goes for left fork
+Philosopher 2 goes for left fork
+Philosopher 2 has left fork
+Philosopher 0 eats for 0 milliseconds
+Philosopher 1 has left fork
+Philosopher 0 releases right fork
+Philosopher 0 releases left fork
+Philosopher 0 thinks for 0 milliseconds
+Philosopher 2 eats for 0 milliseconds
+Philosopher 1 goes for right fork
+Philosopher 0 goes for right fork
+Philosopher 3 has left fork
+Philosopher 2 releases right fork
+Philosopher 3 goes for right fork
+Philosopher 2 releases left fork
+Philosopher 1 has right fork
+Philosopher 2 thinks for 0 milliseconds
+Philosopher 3 has right fork
+Philosopher 1 eats for 0 milliseconds
+Philosopher 3 eats for 0 milliseconds
+Philosopher 2 goes for right fork
+Philosopher 1 releases right fork
+Philosopher 0 has right fork
+Philosopher 1 releases left fork
+Philosopher 1 thinks for 0 milliseconds
+Philosopher 3 releases right fork
+Philosopher 2 has right fork
+Philosopher 3 releases left fork
+Philosopher 3 thinks for 0 milliseconds
+Philosopher 0 goes for left fork
+Philosopher 0 has left fork
+Philosopher 1 goes for left fork
+Philosopher 2 goes for left fork
+Philosopher 2 has left fork
+Philosopher 3 goes for left fork
+Philosopher 2 eats for 0 milliseconds
+Philosopher 0 eats for 0 milliseconds
+Philosopher 2 releases right fork
+Philosopher 2 releases left fork
+Philosopher 2 thinks for 0 milliseconds
+Philosopher 3 has left fork
+Philosopher 1 has left fork
+Philosopher 0 releases right fork
+Philosopher 0 releases left fork
+Philosopher 0 thinks for 0 milliseconds
+Philosopher 2 goes for right fork
+Philosopher 3 goes for right fork
+Philosopher 3 has right fork
+Philosopher 3 eats for 0 milliseconds
+Philosopher 1 goes for right fork
+Philosopher 1 has right fork
+Philosopher 1 eats for 0 milliseconds
+Philosopher 3 releases right fork
+Philosopher 0 goes for right fork
+Philosopher 2 has right fork
+Philosopher 1 releases right fork
+Philosopher 3 releases left fork
+Philosopher 3 thinks for 0 milliseconds
+Philosopher 0 has right fork
+Philosopher 1 releases left fork
+Philosopher 2 goes for left fork
+Philosopher 1 thinks for 0 milliseconds
+Philosopher 2 has left fork
+Philosopher 3 goes for left fork
+Philosopher 0 goes for left fork
+Philosopher 0 has left fork
+Philosopher 1 goes for left fork
+Philosopher 2 eats for 0 milliseconds
+Philosopher 0 eats for 0 milliseconds
+Philosopher 3 has left fork
+Philosopher 2 releases right fork
+Philosopher 2 releases left fork
+Philosopher 2 thinks for 0 milliseconds
+Philosopher 1 has left fork
+Philosopher 0 releases right fork
+Philosopher 0 releases left fork
+Philosopher 0 thinks for 0 milliseconds
+Philosopher 3 goes for right fork
+Philosopher 3 has right fork
+Philosopher 3 eats for 0 milliseconds
+Philosopher 2 goes for right fork
+Philosopher 1 goes for right fork
+Philosopher 1 has right fork
+Philosopher 1 eats for 0 milliseconds
+Philosopher 0 goes for right fork
+Philosopher 3 releases right fork
+Philosopher 3 releases left fork
+Philosopher 2 has right fork
+Philosopher 3 thinks for 0 milliseconds
+Philosopher 1 releases right fork
+Philosopher 1 releases left fork
+Philosopher 1 thinks for 0 milliseconds
+Philosopher 0 has right fork
+Philosopher 2 goes for left fork
+Philosopher 2 has left fork
+Philosopher 3 goes for left fork
+Philosopher 0 goes for left fork
+Philosopher 0 has left fork
+Philosopher 1 goes for left fork
+Philosopher 0 eats for 0 milliseconds
+Philosopher 2 eats for 0 milliseconds
+Philosopher 3 has left fork
+Philosopher 2 releases right fork
+Philosopher 2 releases left fork
+Philosopher 2 thinks for 0 milliseconds
+Philosopher 1 has left fork
+Philosopher 3 goes for right fork
+Philosopher 0 releases right fork
+Philosopher 2 goes for right fork
+Philosopher 0 releases left fork
+Philosopher 3 has right fork
+Philosopher 3 eats for 0 milliseconds
+Philosopher 0 thinks for 0 milliseconds
+Philosopher 1 goes for right fork
+Philosopher 1 has right fork
+Philosopher 1 eats for 0 milliseconds
+Philosopher 3 releases right fork
+Philosopher 2 has right fork
+Philosopher 3 releases left fork
+Philosopher 3 thinks for 0 milliseconds
+Philosopher 0 goes for right fork
+Philosopher 1 releases right fork
+Philosopher 0 has right fork
+Philosopher 1 releases left fork
+Philosopher 1 thinks for 0 milliseconds
+Philosopher 2 goes for left fork
+Philosopher 2 has left fork
+Philosopher 3 goes for left fork
+Philosopher 1 goes for left fork
+Philosopher 0 goes for left fork
+Philosopher 0 has left fork
+Philosopher 2 eats for 0 milliseconds
+Philosopher 0 eats for 0 milliseconds
+Philosopher 2 releases right fork
+Philosopher 2 releases left fork
+Philosopher 3 has left fork
+Philosopher 2 thinks for 0 milliseconds
+Philosopher 0 releases right fork
+Philosopher 0 releases left fork
+Philosopher 1 has left fork
+Philosopher 0 thinks for 0 milliseconds
+Philosopher 3 goes for right fork
+Philosopher 3 has right fork
+Philosopher 3 eats for 0 milliseconds
+Philosopher 2 goes for right fork
+Philosopher 0 goes for right fork
+Philosopher 1 goes for right fork
+Philosopher 1 has right fork
+Philosopher 3 releases right fork
+Philosopher 3 releases left fork
+Philosopher 1 eats for 0 milliseconds
+Philosopher 2 has right fork
+Philosopher 2 goes for left fork
+Philosopher 1 releases right fork
+Philosopher 1 releases left fork
+Philosopher 0 has right fork
+Philosopher 1 thinks for 0 milliseconds
+Philosopher 2 has left fork
+Philosopher 0 goes for left fork
+Philosopher 0 has left fork
+Philosopher 1 goes for left fork
+Philosopher 2 eats for 0 milliseconds
+Philosopher 0 eats for 0 milliseconds
+Philosopher 2 releases right fork
+Philosopher 2 releases left fork
+Philosopher 0 releases right fork
+Philosopher 0 releases left fork
+Philosopher 1 has left fork
+Philosopher 1 goes for right fork
+Philosopher 1 has right fork
+Philosopher 1 eats for 0 milliseconds
+Philosopher 1 releases right fork
+Philosopher 1 releases left fork
+
+This went on for a long time, but it did conclude.
+
