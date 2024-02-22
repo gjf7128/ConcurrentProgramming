@@ -1,4 +1,4 @@
-public class Driver {
+public class Driver0 {
     public static void main(String[] args) {
         boolean minusEll = false;
         int numPhilosophers = 4;
