@@ -13,23 +13,36 @@
 //compiler with the following command:
 
 // gcc pthreads_demo.c -pthread -o pthreads_demo
+// How to run in terminal with command line argument reverse:
+// .\pthreads_demo reverse
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include <assert.h>
 #include <pthread.h>
 #include <unistd.h>
+#include <time.h>
 
 #define NUM_THREADS (5)
+bool reverse_flag = false;
+
+void spin_loop(int seconds) {
+    clock_t start = clock();
+    clock_t difference;
+    do {
+        difference = clock() - start;
+    } while (difference < seconds);
+}
 
 static void *perform_work( void *arguments )
 {
   int index = *((int *)arguments);
-  int sleep_time = 1 + rand() % NUM_THREADS;
+  int sleep_time = (!reverse_flag) ? 1 + (2 * index) : 1 * ( 2 * ( 5 - index));
 
   printf("THREAD %d: Started.\n", index);
   printf("THREAD %d: Will be sleeping for %d seconds.\n", index, sleep_time);
-  sleep(sleep_time);
+  spin_loop(sleep_time);
   printf("THREAD %d: Ended.\n", index);
 
   return NULL;
@@ -41,6 +54,12 @@ int main( int arg_count, char *arg_strings[] )
   int thread_args[NUM_THREADS];
   int i;
   int result_code;
+
+  if (arg_count == 2 ) {
+    if (strcmp(arg_strings[1], "reverse") == 0) {
+        reverse_flag = true;
+    }
+  }
   
   //create all threads one by one
   for (i = 0; i < NUM_THREADS; i++) {
