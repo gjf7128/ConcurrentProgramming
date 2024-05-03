@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
     struct sockaddr_in serv_addr;
     struct hostent *server;
 
-    char buffer[256];
+    // char buffer[256] = "0123456789";
     if (argc < 3) {
        fprintf(stderr,"usage %s hostname port\n", argv[0]);
        exit(0);
@@ -41,17 +41,41 @@ int main(int argc, char *argv[])
     serv_addr.sin_port = htons(portno);
     if (connect(sockfd,(struct sockaddr *) &serv_addr,sizeof(serv_addr)) < 0) 
         error("ERROR connecting");
-    printf("Please enter the message: ");
-    bzero(buffer,256);
-    fgets(buffer,255,stdin);
-    n = write(sockfd,buffer,strlen(buffer));
-    if (n < 0) 
-         error("ERROR writing to socket");
-    bzero(buffer,256);
-    n = read(sockfd,buffer,255);
-    if (n < 0) 
-         error("ERROR reading from socket");
-    printf("%s\n",buffer);
+    printf("Looping 1000x while sending 10 byte msg...");
+    // bzero(buffer,256);
+    // fgets(buffer,255,stdin);
+    clock_t start = clock();
+    for (int i = 1; i <= 1000; i++) {
+        char buffer[256] = "0123456789";
+        n = write(sockfd,buffer,strlen(buffer));
+        if (n < 0) 
+            error("ERROR writing to socket");
+        bzero(buffer,256);
+        n = read(sockfd,buffer,255);
+        if (n < 0) 
+            error("ERROR reading from socket");
+        printf("%s\n",buffer);
+        // close(sockfd);
+        bzero(buffer, strlen(buffer));
+    }
+    int difference = start - clock();
+    int differenceOverLoops = difference / 1000;
+    printf("1000 loops have concluded");
+    printf("Connection time is %d elapsed over %d iterations which equals %d seconds", difference, 1000, differenceOverLoops);
+    // Uncomment this code to bring it to it's initial state
+    // if (connect(sockfd,(struct sockaddr *) &serv_addr,sizeof(serv_addr)) < 0) 
+    //     error("ERROR connecting");
+    // printf("Please enter the message: ");
+    // bzero(buffer,256);
+    // fgets(buffer,255,stdin);
+    // n = write(sockfd,buffer,strlen(buffer));
+    // if (n < 0) 
+    //      error("ERROR writing to socket");
+    // bzero(buffer,256);
+    // n = read(sockfd,buffer,255);
+    // if (n < 0) 
+    //      error("ERROR reading from socket");
+    // printf("%s\n",buffer);
     close(sockfd);
     return 0;
 }
