@@ -26,18 +26,18 @@ int main(int argc, char *argv[])
          exit(1);
      }
      int count = 1;
-     sockfd = socket(AF_INET, SOCK_STREAM, 0);
-     if (sockfd < 0) 
-         error("ERROR opening socket");
-     bzero((char *) &serv_addr, sizeof(serv_addr));
-     portno = atoi(argv[1]);
-     serv_addr.sin_family = AF_INET;
-     serv_addr.sin_addr.s_addr = INADDR_ANY;
-     serv_addr.sin_port = htons(portno);
-     if (bind(sockfd, (struct sockaddr *) &serv_addr,
+     while (count <= 1000) {
+         sockfd = socket(AF_INET, SOCK_STREAM, 0);
+         if (sockfd < 0) 
+             error("ERROR opening socket");
+         bzero((char *) &serv_addr, sizeof(serv_addr));
+         portno = atoi(argv[1]);
+         serv_addr.sin_family = AF_INET;
+         serv_addr.sin_addr.s_addr = INADDR_ANY;
+         serv_addr.sin_port = htons(portno);
+         if (bind(sockfd, (struct sockaddr *) &serv_addr,
                   sizeof(serv_addr)) < 0) 
                   error("ERROR on binding");
-     while (count <= 1000) {
          listen(sockfd,5);
          clilen = sizeof(cli_addr);
          newsockfd = accept(sockfd, 
@@ -51,8 +51,9 @@ int main(int argc, char *argv[])
          printf("Here is the message: %s\n",buffer);
          n = write(newsockfd,"I got your message",19);
          if (n < 0) error("ERROR writing to socket");
-        //  close(newsockfd);
-        //  close(sockfd);
+         close(newsockfd);
+         close(sockfd);
+         sleep(60);
          count = count + 1;
      }
     //  listen(sockfd,5);
@@ -68,7 +69,5 @@ int main(int argc, char *argv[])
     //  printf("Here is the message: %s\n",buffer);
     //  n = write(newsockfd,"I got your message",18);
     //  if (n < 0) error("ERROR writing to socket");
-     close(newsockfd);
-     close(sockfd);
      return 0; 
 }
