@@ -5,3 +5,4 @@ Activity 4 - Woolies part 3 done
 Activity 5 - Dining Philosophers done  
 Activity 6 - Banker's Algo done (partially)  
 Activity 7 - pthreads activity complete  
+Activity 9 - sockets activity complete
